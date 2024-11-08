@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empleos Seguros para Adolescentes</title>
     <style>
-        /* Estilos básicos */
+      
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f5;
@@ -92,13 +92,13 @@
         </form>
     </section>
 
-    <!-- Lista de empleos publicados -->
+    
     <section id="job-list">
         <h2>Lista de Empleos</h2>
         <div id="job-container"></div>
     </section>
 
-    <!-- Detalles del empleo y formulario de interés -->
+   
     <section id="interest-form-section" class="hidden">
         <h2>Interesado en el Empleo</h2>
         <p id="job-description"></p>
@@ -109,7 +109,7 @@
         <button type="button" onclick="confirmInterest()">Enviar Interés</button>
     </section>
 
-    <!-- Consejos para cada empleo -->
+    
     <section id="advice-section">
         <h2>Consejos para realizar los trabajos</h2>
         <div id="advice-list"></div>
@@ -199,7 +199,7 @@
             Object.keys(adviceData).forEach(jobType => {
                 const adviceItem = document.createElement("div");
                 adviceItem.classList.add("advice-item");
-                adviceItem.textContent = ${jobType}: ${adviceData[jobType]};
+                adviceItem.textContent = `${jobType}: ${adviceData[jobType]}`;
                 adviceList.appendChild(adviceItem);
             });
         }
